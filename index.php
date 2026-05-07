@@ -69,7 +69,7 @@ if (!$resultado) {
 
         <section id="academico">
             <h3>Apoyo Académico</h3>
-            <p>Enfoque en <strong>SINATA</strong> (Tutorías) y <strong>PRONAFOLE</strong> (Fomento a la lectura).</p>
+            <p>Enfoque en <strong>SINATA. sistema nacional de tutorias es una estrategia para contribuir al desarrollo de las competencias y apoyar a las y los alumnos en la resolucion de problemas de tipo academico</strong> (Tutorías) y <strong>PRONAFOLE</strong> (Fomento a la lectura).</p>
         </section>
 
         <section id="salud">
