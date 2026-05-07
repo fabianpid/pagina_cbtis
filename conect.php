@@ -1,6 +1,5 @@
 <?php
-// Usamos getenv para Railway, pero si estás en XAMPP local, 
-// puedes poner los datos entre comillas si no te conecta.
+
 $host = getenv('MYSQLHOST') ?: "localhost";
 $port = getenv('MYSQLPORT') ?: "3306";
 $user = getenv('MYSQLUSER') ?: "root";
@@ -23,13 +22,13 @@ if(isset($_POST['enviar'])){
     // 1. Recibimos datos
     $opinion = $_POST['opinion'];
     $sql = "INSERT INTO parecio (opinion) VALUES ('$opinion')";
-    $query = mysqli_query($con, $sql);
+    $query = mysqli_query($conexion, $sql);
 
     if($query){
         echo "¡Éxito! Usuario insertado.";
     } else {
         // ESTA LÍNEA ES CLAVE: Te dirá qué tiene de malo tu base de datos
-        echo "Error de SQL: " . mysqli_error($con);
+        echo "Error de SQL: " . mysqli_error($conexion);
     }
 } else {
     echo "El formulario no está enviando el nombre 'enviar'.";

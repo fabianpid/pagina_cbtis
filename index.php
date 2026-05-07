@@ -92,7 +92,7 @@ if (!$resultado) {
             <div class="input-group">
                 <input type="text" name="opinion" placeholder="¿que tal te parecio mi pagina?" required>
             </div>
-            <button type="submit" name="enviar" class="btn-submit">Enviar Pedido</button>
+            <button type="submit" name="enviar" class="btn-submit">Enviar opinion</button>
         </form>
     </div>
 </section>
