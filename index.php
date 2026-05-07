@@ -86,6 +86,16 @@ if (!$resultado) {
             <h3>Emprendimiento y Talento</h3>
             <p>Espacio para <strong>MEEMS</strong> y diversos <strong>Clubes</strong> (Deportivos, Culturales y de Ciencias).</p>
         </section>
+        <section id="contacto" class="form-container">
+    <div class="form-card">
+        <form action="conect.php" method="POST">
+            <div class="input-group">
+                <input type="text" name="opinion" placeholder="¿que tal te parecio mi pagina?" required>
+            </div>
+            <button type="submit" name="enviar" class="btn-submit">Enviar Pedido</button>
+        </form>
+    </div>
+</section>
     </main>
 
     <footer>
