@@ -1,3 +1,14 @@
+<?php
+include("conect.php"); // Asegúrate de que este sea el nombre del archivo
+
+$query = "SELECT * FROM programas";
+// MUCHO OJO AQUÍ: Si en conect.php usaste $conexion, aquí debe ser $conexion
+$resultado = mysqli_query($conexion, $query); 
+
+if (!$resultado) {
+    die("Error en la consulta: " . mysqli_error($conexion));
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>

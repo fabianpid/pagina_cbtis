@@ -1,17 +1,18 @@
 <?php
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-include("conexion.php");
-$host = "localhost";   
-$user = "root";        
-$pass = "";          
-$db   = "formacion_integral";
+// Usamos getenv para Railway, pero si estás en XAMPP local, 
+// puedes poner los datos entre comillas si no te conecta.
+$host = getenv('MYSQLHOST') ?: "localhost";
+$port = getenv('MYSQLPORT') ?: "3306";
+$user = getenv('MYSQLUSER') ?: "root";
+$pass = getenv('MYSQLPASSWORD') ?: "";
+$db   = getenv('MYSQLDATABASE') ?: "railway";
 
-$conexion = mysqli_connect($host, $user, $pass, $db);
+$conexion = mysqli_connect($host, $user, $pass, $db, $port);
 
-// Verificar si la conexión fue exitosa
 if (!$conexion) {
-    die("Error al conectar con la base de datos: " . mysqli_connect_error());
+    die("Error de conexión: " . mysqli_connect_error());
 }
- echo "Conexión exitosa"; 
+
+// Esto es vital para los acentos
+mysqli_set_charset($conexion, "utf8");
 ?>
