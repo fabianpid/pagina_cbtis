@@ -78,7 +78,7 @@
     </main>
 
     <footer>
-        <p><strong>Contacto:2281196948</strong> Av. Ruiz Cortines S/N, Coatepec, Ver. | Tel: 228 119 6948</p>
+        <p><strong>Contacto:2288162077</strong> carretera antigua xalapa - coatepec km 8.5,consolopa,coatepec,veracruz | Tel: 228 816 2077</p>
         <p>Desarrollado por: <strong>Fabián emir pineda hernandez</strong> &copy; 2026</p>
         <div class="redes">
             <a href="#">whatsapp:2281196948</a> | <a href="#">Instagram:pinedaa_hz</a>
