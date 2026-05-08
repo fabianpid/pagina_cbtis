@@ -133,9 +133,9 @@ if (!$resultado) {
             <h3>¿Te fue de utilidad la pagina? dejanos tu opinion </h3>
             <p>Envíanos tu opinion.</p>
             <form action="conect.php" method="POST">
-                <label for="opinion">opinion:</label>
+                <label>opinion:</label>
                 <input type="text" id="opinion" name="opinion" placeholder="Tu opinion aqui" required>
-                <button type="submit">Enviar Consulta</button>
+                <button type="submit" name="enviar" class="btn-submit">Enviar Consulta</button>
             </form>
         </section>
 
