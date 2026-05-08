@@ -81,7 +81,8 @@ if (!$resultado) {
                 <p><strong>PRONAFOLE (Fomento a la Lectura):</strong> Invita a los alumnos a acercarse a otros mundos mediante círculos literarios, tertulias, lecturas de poemas y juegos de investigación.</p>
             </div>
             <div class="imagen-seccion">
-                <img src="imagenes/academico.jpg" alt="Apoyo Académico">
+                <img src="SINATA.jpg" alt="Apoyo Académico">
+                <img src="pronafole1.jpg" alt="fomento a la lectura">
             </div>
         </section>
 
@@ -92,7 +93,7 @@ if (!$resultado) {
                 <p>También se llevan a cabo estrategias de educación para la prevención de adicciones y promoción de la salud en el aula.</p>
             </div>
             <div class="imagen-seccion">
-                <img src="imagenes/salud.jpg" alt="Bienestar y Salud">
+                <img src="fomalasa.jpg" alt="Bienestar y Salud">
             </div>
         </section>
 
@@ -103,7 +104,8 @@ if (!$resultado) {
                 <p><strong>AMA DGETI (Acciones por el Medio Ambiente):</strong> Busca reforzar el compromiso ciudadano en materia de sustentabilidad y cuidado del ambiente ante los desafíos actuales de nuestra sociedad.</p>
             </div>
             <div class="imagen-seccion">
-                <img src="imagenes/desarrollo.jpg" alt="Desarrollo Integral">
+                <img src="amadgeti.jpg" alt="Desarrollo Integral">
+                <img src="ecale.jpg" alt="el cine a la escuela">
             </div>
         </section>
 
@@ -119,7 +121,9 @@ if (!$resultado) {
                 </ul>
             </div>
             <div class="imagen-seccion">
-                <img src="imagenes/clubes.jpg" alt="Clubes y Emprendimiento">
+                <img src="meems.jpg" alt="Clubes y Emprendimiento">
+                <img src="deporte.jpg" alt="clubes">
+                <img src="futbol.jpg" alt="clubes">
             </div>
         </section>
 

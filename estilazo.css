@@ -1,12 +1,16 @@
-/* Colores institucionales sugeridos */
+/* =========================================
+   1. COLORES Y ESTILOS BASE
+   ========================================= */
 :root {
-    --guinda-cbtis: #6b1d31; /* Un tono guinda escolar */
+    --guinda-cbtis: #6b1d31;
+    --guinda-hover: #4a1422;
     --gris-claro: #f4f4f4;
     --texto: #333;
+    --blanco: #ffffff;
 }
 
 body {
-    font-family: Arial, sans-serif; /* Fuente estándar de toda la vida */
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--gris-claro);
@@ -14,101 +18,182 @@ body {
     line-height: 1.6;
 }
 
-/* Encabezado */
 header {
     background-color: var(--guinda-cbtis);
     color: white;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
+    border-bottom: 4px solid #4a1422;
 }
 
 header img {
-    max-width: 80px; /* Tamaño discreto para el logo */
+    max-width: 90px;
     margin-bottom: 10px;
 }
 
-/* Navegación */
+/* =========================================
+   2. NAVEGACIÓN (Sticky)
+   ========================================= */
 nav {
-    background-color: #444;
-    position: sticky; /* Se queda pegado arriba al bajar */
+    background-color: #333;
+    position: sticky;
     top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 nav ul {
-    list-index: none;
+    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 15px 25px;
     display: block;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
     background-color: var(--guinda-cbtis);
 }
 
-/* Contenedor principal */
+/* =========================================
+   3. CONTENIDO PRINCIPAL Y TABLA
+   ========================================= */
 main {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* Secciones */
-section {
-    margin-bottom: 40px;
-    padding-top: 20px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: var(--blanco);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 h2, h3 {
     color: var(--guinda-cbtis);
-    border-bottom: 2px solid var(--guinda-cbtis);
-    display: inline-block;
-    padding-bottom: 5px;
+    border-left: 5px solid var(--guinda-cbtis);
+    padding-left: 15px;
 }
 
-/* Estilo de la Tabla (Punto 3) */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-}
-
-table th, table td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: left;
+    margin: 25px 0;
+    font-size: 0.95em;
 }
 
 table th {
     background-color: var(--guinda-cbtis);
     color: white;
+    padding: 15px;
+    text-align: left;
 }
 
-/* Alternar colores en las filas para que se vea mejor */
+table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
 table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* Pie de página */
-footer {
-    background-color: #222;
-    color: white;
+/* =========================================
+   4. SECCIONES CON IMAGEN (Flexbox)
+   ========================================= */
+.seccion-con-imagen {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.texto-seccion {
+    flex: 1 1 55%;
+    min-width: 300px;
+}
+
+.imagen-seccion {
+    flex: 1 1 35%;
+    min-width: 280px;
     text-align: center;
-    padding: 20px;
+}
+
+.imagen-seccion img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    border: 3px solid var(--guinda-cbtis);
+}
+
+/* =========================================
+   5. ESTILO DEL FORMULARIO
+   ========================================= */
+.formulario-consulta {
+    background-color: #fcfcfc;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
     margin-top: 40px;
 }
 
-footer p {
-    margin: 5px 0;
-    font-size: 0.9em;
+.formulario-consulta label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--guinda-cbtis);
+}
+
+.formulario-consulta input[type="text"], 
+.formulario-consulta textarea, 
+.formulario-consulta select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Para que el padding no afecte el ancho */
+    font-size: 1em;
+}
+
+.formulario-consulta button {
+    background-color: var(--guinda-cbtis);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.formulario-consulta button:hover {
+    background-color: var(--guinda-hover);
+}
+
+/* =========================================
+   6. PIE DE PÁGINA
+   ========================================= */
+footer {
+    background-color: #222;
+    color: #bbb;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+footer strong {
+    color: white;
 }
