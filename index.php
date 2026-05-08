@@ -1,4 +1,21 @@
 <?php
+
+$host = getenv('MYSQLHOST') ?: "localhost";
+$port = getenv('MYSQLPORT') ?: "3306";
+$user = getenv('MYSQLUSER') ?: "root";
+$pass = getenv('MYSQLPASSWORD') ?: "";
+$db   = getenv('MYSQLDATABASE') ?: "railway";
+
+$conexion = mysqli_connect($host, $user, $pass, $db, $port);
+
+if (!$conexion) {
+    die("Error de conexión: " . mysqli_connect_error());
+}
+
+// Esto es vital para los acentos
+mysqli_set_charset($conexion, "utf8");
+?>
+<?php
 // 2. Consulta para obtener los programas de la tabla
 $query = "SELECT * FROM programas";
 $resultado = mysqli_query($conexion, $query); 
