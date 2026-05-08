@@ -146,7 +146,7 @@ if(isset($_POST['enviar'])){
     $query = mysqli_query($conexion, $sql);
 
     if($query){
-        echo "¡Éxito! Usuario insertado.";
+        echo "¡Muchas gracias tu opinion nos ayuda a mejorar!.";
     } else {
         // ESTA LÍNEA ES CLAVE: Te dirá qué tiene de malo tu base de datos
         echo "Error de SQL: " . mysqli_error($conexion);
