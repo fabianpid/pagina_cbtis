@@ -146,7 +146,7 @@ if (!$resultado) {
         <section id="contacto" class="formulario-consulta">
             <h3>¿Te fue de utilidad la pagina? dejanos tu opinion </h3>
             <p>Envíanos tu opinion.</p>
-            <form action="conect.php" method="POST">
+            <form method="POST">
                 <label>opinion:</label>
                 <input type="text" id="opinion" name="opinion" placeholder="Tu opinion aqui" required>
                 <button type="submit" name="enviar" class="btn-submit">Enviar Consulta</button>
