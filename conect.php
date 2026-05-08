@@ -30,7 +30,5 @@ if(isset($_POST['enviar'])){
         // ESTA LÍNEA ES CLAVE: Te dirá qué tiene de malo tu base de datos
         echo "Error de SQL: " . mysqli_error($conexion);
     }
-} else {
-    echo "El formulario no está enviando el nombre 'enviar'.";
-}
+} 
 ?>
