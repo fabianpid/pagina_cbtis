@@ -1,7 +1,4 @@
 <?php
-// 1. Conexión a la base de datos
-include("conect.php"); 
-
 // 2. Consulta para obtener los programas de la tabla
 $query = "SELECT * FROM programas";
 $resultado = mysqli_query($conexion, $query); 
